@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BGMマップエディタ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>BGMマップエディタ</h1>
+
+<input type="file" id="mapLoader">
+
+<div id="container">
+  <img id="map">
+  <canvas id="canvas"></canvas>
+</div>
+
+<div>
+  <button id="areaBtn">エリア作成</button>
+  <button id="routeBtn">ルート作成</button>
+  <button id="saveBtn">保存</button>
+</div>
+
+<audio id="audio"></audio>
+
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

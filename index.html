@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>BGMマップエディタ</title>
+<title>BGMマップ（固定版）</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,17 +10,27 @@
 
 <h1>BGMマップエディタ</h1>
 
-<input type="file" id="mapLoader">
-
 <div id="container">
-  <img id="map">
-  <canvas id="canvas"></canvas>
+  <img id="map" src="assets/map.jpg">
+  <canvas id="canvas" width="800" height="500"></canvas>
+  <div id="dot"></div>
 </div>
 
 <div>
   <button id="areaBtn">エリア作成</button>
+  <button id="areaFinishBtn">エリア確定</button>
+  <input type="file" id="bgmInput">
+
+  <br>
+
   <button id="routeBtn">ルート作成</button>
+  <button id="playBtn">再生</button>
+
+  <br>
+
   <button id="saveBtn">保存</button>
+  <button id="loadBtn">読み込み</button>
+  <button id="resetBtn">リセット</button>
 </div>
 
 <audio id="audio"></audio>

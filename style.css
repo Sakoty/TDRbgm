@@ -2,6 +2,7 @@ body{
   background:#111;
   color:white;
   text-align:center;
+  font-family:sans-serif;
 }
 
 #container{
@@ -11,10 +12,21 @@ body{
 
 #map{
   width:800px;
+  height:500px;
 }
 
 canvas{
   position:absolute;
   top:0;
   left:0;
+}
+
+#dot{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:red;
+  border-radius:50%;
+  transform:translate(-50%, -50%);
+  display:none;
 }
